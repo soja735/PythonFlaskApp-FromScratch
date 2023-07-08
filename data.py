@@ -1,3 +1,4 @@
+#this file initially created to display  hard coded article details from this file , you can avoid this
 def Articles():
     articles = [
         {
