@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="jumbo-tron text-center">
+    <h1>Welcome to My Flask App</h1>
+    <p class="lead"> This application built on the Python Flask Framework and is focus for the "Python Flask From Scratch". Flask is a small and lightweight Python web framework that provides useful tools and features that make creating web applications in Python easier.</p>
+    {% if session.logged_in == NULL %}
+        <a href="/register" class="btn btn-primary btn-lg">Register</a>
+        <a href="/login" class="btn btn-success btn-lg">Login</a>
+    {% endif %}
+</div>
+{% endblock %}
